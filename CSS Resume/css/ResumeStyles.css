@@ -1,0 +1,166 @@
+/*Pallett
+5a5353 Davy's Grey
+a07178 Burnished Brown
+e6ccbe Dust Storm
+776274 Old Lavender
+c8cc92 Medium Spring Bud
+
+/* Global styles
+-----------------*/
+html {
+  box-sizing: border-box;
+  font-size: 3vw
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 0.5rem
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+h3{
+  margin:0
+}
+a{
+  color: #c8cc92;
+}
+a:hover{
+  text-decoration: none;
+}
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+/*Download Button*/
+.btn{
+  text-decoration: none;
+  background: #c8cc92;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+
+}
+
+/* Header and Footer
+-----------------*/
+
+header, footer {
+  background: #5a5353;
+  color: #e6ccbe;
+  margin: 0;
+}
+/*header*/
+header {
+  padding-top:50px;
+  position: relative;
+}
+.profile-img{
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header h1, header h2{
+  color: #a07178;
+  margin: 0;
+}
+/*footer*/
+footer{
+  text-align: center;
+}
+.contact-info a{
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Nav
+-----------------*/
+nav {
+  text-align: center;
+  background: #5a5353;
+  position: relative;
+  top:0;
+  width:100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  Text-transform: uppercase;
+  font-weight: 700;
+}
+/* Work Experience
+-----------------*/
+.work {
+  background: #776274;
+}
+h3~p{
+  margin:0
+}
+.job-description{
+  Margin-bottom: 25px
+}
+.job-description p:first-of-type{
+  margin-top:0
+}
+/* Education
+-----------------*/
+.education{
+  background: #a07178;
+  background: linear-gradient(rgba(211, 147, 73, 0.9),
+                 rgba(211, 147, 73, 0.7)),
+                 url(../images/uhall.jpg) no-repeat fixed;
+                 background-size: cover;
+}
+p + h3{
+  margin-top: 30px;
+}
+
+/* Media Queries*/
+@media (min-width: 900px){
+  .col-narrow{
+    width: 30%;
+    float: left;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img{
+    width: 200px;
+  }
+}
+@media (max-width: 500px){
+  .profile-img{
+    width: 150px;
+  }
+}
